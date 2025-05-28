@@ -14,6 +14,6 @@ Resources
     | where hasDns != 0
     | project name, nicId = tostring(id)
 ) on nicId
-| project recommendationId = "1cf8fe21-9593-1e4e-966b-779a294c0d30", name, id, dog
+| project recommendationId = "1cf8fe21-9593-1e4e-966b-779a294c0d30", name, id
 | order by id asc
 
